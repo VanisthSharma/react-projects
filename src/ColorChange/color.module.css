@@ -1,0 +1,48 @@
+.Body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+* {
+  font-family: Roboto, sans-serif, Arial;
+  font-weight: 500;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.holder {
+  height: 90vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  button {
+    background-color: #030014;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    width: 10rem;
+    border: 0;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #04001e;
+    }
+  }
+  h1,
+  button,
+  h3 {
+    margin: 3rem;
+  }
+  h2 {
+    margin-top: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20rem;
+    border-radius: 4rem;
+  }
+}
